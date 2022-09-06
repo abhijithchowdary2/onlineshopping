@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <h4 class="mt-3 mb-3">Cart Products</h4>
+        <div class="d-flex flex-row flex-wrap">
+            <div *ngFor="let item of productList" class="d-flex flex-column flex-wrap">
+                <img src={{item._image}} alt="" />
+                <h6>{{item._title}}</h6>
+                <p><strong>Price:</strong>${{item._price}}</p>
+            </div>
+        </div>
+    </div>
+</div>

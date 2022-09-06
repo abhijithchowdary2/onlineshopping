@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <h4 class="mt-4">ALL PRODUCTS</h4>
+        <div class="card-top">
+            <div *ngFor="let item of productList" class="card col-md-3 list">
+                <img src={{item._image}} class="item" alt="" />
+                <h6>{{item._title}}</h6>
+                <p><strong>Price:</strong>${{item._price}}</p>
+                <button class="btn btn-primary" type="submit" (click)="addToCart(item)">Add To Cart</button>
+
+            </div>
+        </div>
+    </div>
+</div>
